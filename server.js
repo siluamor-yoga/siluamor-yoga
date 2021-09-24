@@ -3,10 +3,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/mi-administrador-front'));
+app.use(express.static(__dirname + '/dist/siluamor-yoga-welcome'));
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname + '/dist/mi-administrador-front/index.html')
+  res.sendFile(path.join(__dirname + '/dist/siluamor-yoga-welcome/index.html')
   );
 });
 
