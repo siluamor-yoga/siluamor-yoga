@@ -1,4 +1,4 @@
-<div class="pt-5 d-flex h-100 text-center text-white bg-dark presentation-dimension">
+<div class="pt-5 d-flex h-100 text-center text-white bg-dark presentation-dimension animated fadeIn fast">
     <div class="pt-5 cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <main class="px-3">
             <h1>Siluamor Yoga.</h1>
@@ -7,9 +7,11 @@
                 a la esencia del ser humano.
             </p>
             <p>Vamos a aprender más sobre esto.</p>
-            <p class="pt-5 lead">
-                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Conocer</a>
-            </p>
+
+            <div class="lead btn btn-dark btn-sm example-button-container col-md-3">
+                <button (click)="redirectActivities()" mat-raised-button class="btn btn-lg"
+                    color="primary">Conocer</button>
+            </div>
         </main>
     </div>
 </div>
