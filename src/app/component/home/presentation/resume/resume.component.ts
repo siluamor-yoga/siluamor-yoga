@@ -2,17 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-presentation',
-  templateUrl: './presentation.component.html',
-  styleUrls: ['./presentation.component.css']
+  selector: 'app-resume',
+  templateUrl: './resume.component.html',
+  styleUrls: ['./resume.component.css']
 })
-export class PresentationComponent implements OnInit {
+export class ResumeComponent implements OnInit {
 
   constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
-
   redirectActivities() {
     this.route.navigate(['/activities']);
   }

@@ -16,6 +16,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ProfileComponent } from './component/home/profile/profile.component';
+import { ResumeComponent } from './component/home/presentation/resume/resume.component';
+import { DetailComponent } from './component/home/presentation/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProfileComponent } from './component/home/profile/profile.component';
     ActivitiesComponent,
     MenuComponent,
     FooterComponent,
-    ProfileComponent
+    ProfileComponent,
+    ResumeComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
