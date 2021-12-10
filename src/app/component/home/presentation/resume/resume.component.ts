@@ -8,16 +8,17 @@ import { Router } from '@angular/router';
 })
 export class ResumeComponent implements OnInit {
 
-  viewProfile = 0;
-
   constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
-  redirectActivities() {
-    //this.route.navigate(['/activities']);
-    this.viewProfile = (this.viewProfile += 1) %3;
-    console.log( this.viewProfile)
+
+  scrollInAppDetail() {
+    document.getElementById("resume-component-app-detail")?.scrollIntoView();
+  }
+
+  scroll() {
+    document.getElementById("resume-component-presentation")?.scrollIntoView();
   }
 
   redirectProfile() {

@@ -7,7 +7,13 @@
 .presentation-dimension-section {
   width: 50%;
   height: 50%;
-  min-height: 100vh;
+  min-height: 78vh;
+}
+
+.presentation-dimension-img {
+  width: 100%;
+  height: 100%;
+  min-height: 78vh;
 }
 
 .bg-resume {
@@ -28,6 +34,19 @@
 .resume-padding {
   margin-top: 3%;
   margin-bottom: 3%;
+}
+
+.resume-padding-2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+  align-items: center;
+}
+
+.resume-padding-3 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 3%;
 }
 
 .txt-resume-title {
@@ -91,11 +110,4 @@
 .bg-resume-btn-2 {
   background-color: #EC576B;
   color: #4EC5C1;
-}
-
-#axis:hover .move-down {
-  transform: translate(0,350px);
-  -webkit-transform: translate(0,350px);
-  -o-transform: translate(0,350px); 
-  -moz-transform: translate(0,350px);
 }
