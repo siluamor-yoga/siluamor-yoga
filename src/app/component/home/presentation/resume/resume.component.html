@@ -1,51 +1,56 @@
-<div class="pt-5 d-flex h-100 text-center text-white bg-dark presentation-dimension animated fadeIn fast">
-    <div class="pt-5 cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <main class="px-3">
-        <h1>Siluamor Yoga.</h1>
-        <p class="pt-5 lead">Buenas.. ¿Nos conocemos?</p>
-        <p> Este espacio es para aprender junt@s sobre educación consciente. Una educación que nos acerque
-          a la esencia del ser humano.
-        </p>
-        <p>Vamos a aprender más sobre esto.</p>
-  
-        <div class="lead btn btn-dark btn-sm example-button-container col-md-3">
-          <button (click)="redirectActivities()" mat-raised-button class="btn btn-lg" color="primary">Conocer</button>
-        </div>
-      </main>
+<div *ngIf="viewProfile == 0"
+  class="text-center text-white  presentation-dimension resume-padding animated fadeIn fast">
+  <div class="resume-padding">
+    <main class="resume-padding px-3">
+      <h1 class="txt-resume-title-3">Siluamor</h1>
+      <p class="resume-padding txt-resume-subtitle-2">Buenas.. ¿Nos conocemos?</p>
+      <p class="txt-resume-2"> Este espacio es para aprender junt@s sobre educación consciente. Una educación que nos
+        acerque
+        a la esencia del ser humano.
+      </p>
+      <p class="txt-resume-2">Vamos a aprender más sobre esto.</p>
+    </main>
+    <div class="resume-padding lead btn btn-sm ">
+      <button mat-fab aria-label="Example icon button with a delete icon"
+        class="resume-padding btn btn-lg bg-resume-btn-2" (click)="redirectActivities()">
+        <mat-icon>play_arrow</mat-icon>
+      </button>
     </div>
   </div>
-  
-  <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">Quién soy y para qué comparto este espacio</h1>
-        <p class="lead fw-normal">Mi nombre es Silvana. Entre otras cosas soy muy curiosa, me encanta indagar, saber,
-          meditar, aprender y enseñar. Soy mamá de una adolescente y docente, para mí, desde que nací.</p>
-        <p class="lead fw-normal">
-          Mi misión y propósito en la vida es ayudar a l@s niñ@s a ser quienes quieren ser, guiándol@s a
-          conectar
-          con su mundo interno, sus emociones y sus deseos comprendiendo que son únic@s y valios@s.</p>
-        <button (click)="redirectProfile()" mat-raised-button class="btn btn-outline-secondary" >Ver perfil</button>
-  
-      </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-  
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Yoga</h2>
-          <p class="lead">Clases de Yoga.</p>
-        </div>
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Educación emocional</h2>
-          <p class="lead">Una nueva visión acerca de la educación y salud.</p>
-        </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+</div>
+<div *ngIf="viewProfile == 1" class="container mx-auto items-center flex flex-wrap resume-padding animated fadeIn fast">
+  <div class=" presentation-dimension-section bg-resume-2">
+    <div class="resume-padding">
+      <main class="resume-padding px-3">
+        <p class="resume-padding txt-resume"> Quiero contarles quién soy y para qué comparto este espacio.
+        </p>
+        <p class="txt-resume">Mi nombre es Silvana. Entre otras cosas soy muy curiosa, me encanta indagar, saber,
+          meditar, aprender y enseñar. Soy mamá de una adolescente y docente, para mí, desde que nací. </p>
+        <p class="txt-resume">Mi misión y propósito en la vida es ayudar a l@s niñ@s a ser quienes quieren ser,
+          guiándol@s a conectar con su mundo interno, sus emociones y sus deseos comprendiendo que son únic@s y
+          valios@s. </p>
+        <h1 class="txt-resume-title">Siluamor</h1>
+      </main>
+      <div class="resume-padding lead btn btn-sm example-button-container col-md-3">
+        <button mat-fab aria-label="Example icon button with a delete icon"
+          class="resume-padding btn btn-lg bg-resume-btn" (click)="redirectActivities()">
+          <mat-icon>arrow_downward</mat-icon>
+        </button>
       </div>
     </div>
-  </main>
+  </div>
+  <div class=" presentation-dimension-section bg-light">
+    <img class="presentation-dimension" src="assets/img/siluamor-yoga.jpg" alt="..." />
+  </div>
+</div>
+<div *ngIf="viewProfile == 2" class="resume-padding container mx-auto items-center flex flex-wrap resume-padding animated fadeIn fast ">
+  <button mat-fab aria-label="Example icon button with a delete icon" class="resume-padding btn btn-lg bg-resume-btn"
+    (click)="redirectActivities()">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
+  <app-detail  class="presentation-dimension  animated fadeIn fast"></app-detail>
+  <button mat-fab aria-label="Example icon button with a delete icon" class="resume-padding btn btn-lg bg-resume-btn"
+    (click)="redirectActivities()">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
+</div>
