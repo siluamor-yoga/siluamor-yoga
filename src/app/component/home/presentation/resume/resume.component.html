@@ -1,13 +1,13 @@
-<div class="text-center text-white  presentation-dimension animated fadeIn fast">
+<div class="bg-resume-component text-center text-white  presentation-dimension animated fadeIn fast">
   <div>
     <main id="resume-component-header">
-      <h1 class="txt-resume-title-3">Siluamor</h1>
-      <p class="resume-padding txt-resume-subtitle-2">Buenas.. ¿Nos conocemos?</p>
-      <p class="txt-resume-2"> Este espacio es para aprender junt@s sobre educación consciente. Una educación que nos
+      <h1 class="txt-resume-title-4">Siluamor</h1>
+      <p class="resume-padding txt-resume-subtitle-3">Buenas.. ¿Nos conocemos?</p>
+      <p class="txt-resume-3"> Este espacio es para aprender junt@s sobre educación consciente. Una educación que nos
         acerque
         a la esencia del ser humano.
       </p>
-      <p class="txt-resume-2">Vamos a aprender más sobre esto.</p>
+      <p class="txt-resume-3">Vamos a aprender más sobre esto.</p>
     </main>
     <div class="resume-padding lead btn btn-sm ">
       <button mat-fab aria-label="Example icon button with a delete icon"
@@ -17,32 +17,36 @@
     </div>
   </div>
 </div>
+<mat-card class="bg-resume-component-card example-card">
 <div id="resume-component-presentation"
   class="container mx-auto items-center flex flex-wrap resume-padding-3 animated fadeIn fast">
-  <div class=" presentation-dimension-section bg-light">
-    <img class="presentation-dimension-img " src="assets/img/siluamor-yoga.jpg" />
-  </div>
-  <div class=" presentation-dimension-section bg-resume-2">
-    <div class="resume-padding">
-      <main class="resume-padding px-3">
-        <p class="resume-padding txt-resume"> Quiero contarles quién soy y para qué comparto este espacio.
-        </p>
-        <p class="txt-resume">Mi nombre es Silvana. Entre otras cosas soy muy curiosa, me encanta indagar, saber,
-          meditar, aprender y enseñar. Soy mamá de una adolescente y docente, para mí, desde que nací. </p>
-        <p class="txt-resume">Mi misión y propósito en la vida es ayudar a l@s niñ@s a ser quienes quieren ser,
-          guiándol@s a conectar con su mundo interno, sus emociones y sus deseos comprendiendo que son únic@s y
-          valios@s. </p>
-        <h1 class="txt-resume-title">Siluamor</h1>
-      </main>
-    </div>
-  </div>
 
-  <div class="resume-padding-2 lead btn btn-sm example-button-container col-md-3">
-    <button mat-fab class="btn btn-lg bg-resume-btn" (click)="scrollInAppDetail()">
-      <mat-icon>arrow_downward</mat-icon>
-    </button>
-  </div>
+    <div class=" presentation-dimension-section bg-resume-img">
+      <img class="presentation-dimension-img " src="assets/img/siluamor-yoga-1.jpg" />
+    </div>
+    <div class=" presentation-dimension-section bg-resume-2">
+      <div class="resume-padding">
+        <main class="resume-padding px-3">
+          <p class="resume-padding txt-resume"> Quiero contarles quién soy y para qué comparto este espacio.
+          </p>
+          <p class="txt-resume">Mi nombre es Silvana. Entre otras cosas soy muy curiosa, me encanta indagar, saber,
+            meditar, aprender y enseñar. Soy mamá de una adolescente y docente, para mí, desde que nací. </p>
+          <p class="txt-resume">Mi misión y propósito en la vida es ayudar a l@s niñ@s a ser quienes quieren ser,
+            guiándol@s a conectar con su mundo interno, sus emociones y sus deseos comprendiendo que son únic@s y
+            valios@s. </p>
+          <h1 class="txt-resume-title">Siluamor</h1>
+        </main>
+      </div>
+    </div>
+
+    <div class="resume-padding-2 lead btn btn-sm example-button-container col-md-3">
+      <button mat-fab class="btn btn-lg bg-resume-btn" (click)="scrollInAppDetail()">
+        <mat-icon>arrow_downward</mat-icon>
+      </button>
+    </div>
 </div>
+</mat-card>
+
 <div class="resume-padding container mx-auto items-center flex flex-wrap resume-padding animated fadeIn fast ">
   <app-detail id="resume-component-app-detail" class="presentation-dimension  animated fadeIn fast"></app-detail>
   <div class="resume-padding-2 lead btn btn-sm example-button-container col-md-3">

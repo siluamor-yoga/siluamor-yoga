@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-activities',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivitiesComponent implements OnInit {
 
-  constructor() {
+  constructor(private route: Router) {
     window.scrollTo(0, 0);
   }
 
   ngOnInit(): void {
   }
 
+  redirectProfile() {
+    this.route.navigate(['/presentation']);
+  }
 }

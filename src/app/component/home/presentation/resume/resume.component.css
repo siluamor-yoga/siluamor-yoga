@@ -11,9 +11,18 @@
 }
 
 .presentation-dimension-img {
-  width: 100%;
-  height: 100%;
+  width: 78%;
+  height: 78%;
   min-height: 78vh;
+  margin-left: 9%;
+}
+
+.bg-resume-component {
+  background-color: #94618e;
+}
+
+.bg-resume-component-card{
+  background-color: #6fb98f;
 }
 
 .bg-resume {
@@ -23,12 +32,15 @@
 
 .bg-resume-2 {
   background-color: #49274a !important;
-  background: #fdcae1;
 }
 
 .bg-resume-3 {
   background-color: #4EC5C1 !important;
   background: #fdcae1;
+}
+
+.bg-resume-img{
+  background-color: #2c7873;
 }
 
 .resume-padding {
@@ -70,6 +82,14 @@
   text-align: center;
 }
 
+.txt-resume-title-4 {
+  font-size: 55px;
+  padding-top: 11%;
+  padding-left: 3%;
+  color: #f8eee7;
+  text-align: center;
+}
+
 .txt-resume-subtitle {
   font-size: 34px;
   padding-top: 11%;
@@ -83,6 +103,14 @@
   padding-top: 2%;
   padding-left: 3%;
   color: #4EC5C1;
+  text-align: center;
+}
+
+.txt-resume-subtitle-3 {
+  font-size: 34px;
+  padding-top: 2%;
+  padding-left: 3%;
+  color: #f8eee7;
   text-align: center;
 }
 
@@ -102,6 +130,14 @@
   text-align: center;
 }
 
+.txt-resume-3 {
+  font-size: 21px;
+  padding-top: 3%;
+  padding-left: 3%;
+  color: #f8eee7;
+  text-align: center;
+}
+
 .bg-resume-btn {
   background-color: #F8EEE7;
   color: #49274a;
@@ -111,3 +147,4 @@
   background-color: #EC576B;
   color: #4EC5C1;
 }
+

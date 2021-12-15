@@ -9,3 +9,7 @@ mat-sidenav {
 main {
     padding: 1px;
 }
+
+.bg-sidenav-component {
+    background-color: #49274a !important;
+}

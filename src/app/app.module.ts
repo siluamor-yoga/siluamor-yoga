@@ -16,6 +16,7 @@ import { SidenavComponent } from './component/base/sidenav/sidenav.component';
 
 //AngularMaterial
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -42,6 +43,7 @@ import { SidenavListComponent } from './component/base/sidenav/sidenav-list/side
     BrowserAnimationsModule,
 
     MatButtonModule,
+    MatCardModule,
     MatIconModule,
     MatListModule,
     MatMenuModule,
