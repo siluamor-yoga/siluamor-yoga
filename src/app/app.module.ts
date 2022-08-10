@@ -9,15 +9,20 @@ import { PresentationComponent } from './component/home/presentation/presentatio
 import { ActivitiesComponent } from './component/home/activities/activities.component';
 import { MenuComponent } from './component/base/menu/menu.component';
 import { FooterComponent } from './component/base/footer/footer.component';
-
-//AngularMaterial
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { ProfileComponent } from './component/home/profile/profile.component';
 import { ResumeComponent } from './component/home/presentation/resume/resume.component';
 import { DetailComponent } from './component/home/presentation/detail/detail.component';
+import { SidenavComponent } from './component/base/sidenav/sidenav.component';
+
+//AngularMaterial
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SidenavListComponent } from './component/base/sidenav/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,9 @@ import { DetailComponent } from './component/home/presentation/detail/detail.com
     FooterComponent,
     ProfileComponent,
     ResumeComponent,
-    DetailComponent
+    DetailComponent,
+    SidenavComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
@@ -36,8 +43,11 @@ import { DetailComponent } from './component/home/presentation/detail/detail.com
     BrowserAnimationsModule,
 
     MatButtonModule,
+    MatCardModule,
     MatIconModule,
     MatListModule,
+    MatMenuModule,
+    MatSidenavModule,
     MatToolbarModule
   ],
   providers: [],

@@ -2,35 +2,40 @@
     <div class="container mx-auto items-center flex flex-wrap">
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div class="pt-32 sm:pt-0">
-                <h2 class="font-semibold text-4xl text-blueGray-600">
+                <h2 class="font-semibold text-4xl text-white">
                     Aprendo, practico y enseño el camino del Autoconocimiento, la meditación, la respiración consciente
                     y Yoga.
                 </h2>
-                <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+                <p class="mt-4 text-lg leading-relaxed text-white">
                     Estudié tres años Comunicación Social. Mi pasión por enseñar me llamó con fuerza, lo que entonces
-                    hizo que decidiera continuar mis estudios por otros rumbos. En 2007 me recibí de Profesora del Nivel
+                    hizo que decidiera continuar mis estudios por otros rumbos.
+                </p>
+                <p>
+                    En 2007 me recibí de Profesora del Nivel
                     Primario. Desde 2014 Estoy en formación a través de distintos talleres y curso sobre Educación
                     Consciente.
+                </p>
+                <p>
                     Soy Diplomada en Educación Emocional con especialización en el aprendizaje.
                     Formándome en el Instructorado de Yoga para niñ@s y adoloescentes.
                 </p>
                 <div class="mt-12">
-                    <a href="" target="_blank"
-                        class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-600 active:bg-red-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
-                        ver más
-                    </a>
-                    <a href=""
+
+                    <button
+                        class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-600 active:bg-red-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                        type="button" (click)="redirectActivities()">Actividades
+                    </button>
+                    <button
                         class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-                        target="_blank">
-                        ver talleres
-                    </a>
+                        type="button" (click)="redirectActivities()"> Talleres
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
     <img class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-        src="assets/img/siluamor-yoga.jpg" alt="..." />
+        src="assets/img/siluamor-yoga-2.jpg" alt="..." />
 </section>
 
 <section class="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
@@ -40,19 +45,15 @@
             <polygon class="text-blueGray-100 fill-current" points="2560 0 2560 100 0 100"></polygon>
         </svg>
     </div>
-    <div class="container mx-auto">
+    <!-- <div class="container mx-auto">
         <div class="flex flex-wrap items-center">
             <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
                 <div
                     class="relative flex flex-col min-w-0 break-words bg-dark w-full mb-6 shadow-lg rounded-lg bg-red-600">
-                    <img alt="..."
-                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
-                        class="w-full align-middle rounded-t-lg" />
+                    <img alt="..." src="assets/img/siluamor-yoga-4.jpg"  />
                     <blockquote class="relative p-8 mb-4">
-                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
-                            class="absolute left-0 w-full block h-95-px -top-94-px">
-                            <polygon points="-30,95 583,95 583,65" class="text-red-600 fill-current"></polygon>
-                        </svg>
+                 
+                        
                         <h4 class="text-xl font-bold text-white">
                             Amo enseñar!
                         </h4>
@@ -124,17 +125,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="container mx-auto px-4 pb-32 pt-48">
         <div class="items-center flex flex-wrap">
             <div class="w-full md:w-5/12 ml-auto px-12 md:px-4">
                 <div class="md:pr-12">
-                    <div
-                        class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                        <i class="fas fa-file-alt text-xl"></i>
-                    </div>
-                    <h3 class="text-3xl font-semibold">Muchas veces me sentí una especie de pulpo social.</h3>
+                    <h3 class="text-3xl font-semibold text-blueGray-500">Muchas veces me sentí una especie de pulpo social.</h3>
                     <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
                         Teniendo que intervenir en campos que desconocía.
                         Pero lo que me di cuenta en los años de recorrido en busca de respuestas, y usando estrategias
@@ -146,53 +143,6 @@
                         Yoga que
                         vamos a contribuír a un mundo mejor. Sueño todos los días con eso!
                     </p>
-                    <ul class="list-none mt-6">
-                        <li class="py-2">
-                            <div class="flex items-center">
-                                <div>
-                                    <span
-                                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
-                                        <i class="fas fa-fingerprint"></i>
-                                    </span>
-                                </div>
-                                <div>
-                                    <h4 class="text-blueGray-500">
-                                        Actividad 1
-                                    </h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="py-2">
-                            <div class="flex items-center">
-                                <div>
-                                    <span
-                                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
-                                        <i class="fab fa-html5"></i>
-                                    </span>
-                                </div>
-                                <div>
-                                    <h4 class="text-blueGray-500">
-                                        Actividad 2
-                                    </h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="py-2">
-                            <div class="flex items-center">
-                                <div>
-                                    <span
-                                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
-                                        <i class="far fa-paper-plane"></i>
-                                    </span>
-                                </div>
-                                <div>
-                                    <h4 class="text-blueGray-500">
-                                        Actividad 3
-                                    </h4>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
 
@@ -200,7 +150,7 @@
                 <img alt="..." class="max-w-full rounded-lg shadow-xl" style="
               transform: scale(1) perspective(1040px) rotateY(-11deg)
                 rotateX(2deg) rotate(2deg);
-            " src="assets/img/siluamor-yoga.jpg" />
+            " src="assets/img/siluamor-yoga-3.jpg" />
             </div>
         </div>
     </div>

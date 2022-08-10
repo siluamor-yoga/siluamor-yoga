@@ -8,12 +8,21 @@ import { Router } from '@angular/router';
 })
 export class ResumeComponent implements OnInit {
 
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
+
   constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
-  redirectActivities() {
-    this.route.navigate(['/activities']);
+
+  scrollInAppDetail() {
+    document.getElementById("resume-component-app-detail")?.scrollIntoView();
+  }
+
+  scroll() {
+    document.getElementById("resume-component-presentation")?.scrollIntoView();
   }
 
   redirectProfile() {
